@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vignan IIT Assistant</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-badge">V</div>
+        <span>Vignan IIT Assistant</span>
+      </div>
+      <button id="newChatBtn" class="new-chat-btn">
+        <span class="plus">+</span> New chat
+      </button>
+      <div class="sidebar-section-title">About</div>
+      <p class="sidebar-note">
+        Ask me anything about Vignan Institute of Information Technology —
+        admissions, courses, placements, facilities, and more. I only answer
+        using content from <strong>vignaniit.edu.in</strong>.
+      </p>
+      <div class="sidebar-footer">
+        <span id="statusDot" class="status-dot"></span>
+        <span id="statusText">Connecting...</span>
+      </div>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="chat-main">
+      <header class="chat-header">
+        <h1>Vignan IIT Assistant</h1>
+        <p>Answers grounded in the official college website, with sources.</p>
+      </header>
+
+      <div id="chatWindow" class="chat-window">
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">🎓</div>
+          <h2>How can I help you today?</h2>
+          <div class="suggestions">
+            <button class="suggestion-chip">What courses does Vignan IIT offer?</button>
+            <button class="suggestion-chip">Tell me about the admission process</button>
+            <button class="suggestion-chip">What are the placement highlights?</button>
+            <button class="suggestion-chip">Where is the college located?</button>
+          </div>
+        </div>
+      </div>
+
+      <form id="chatForm" class="chat-input-bar">
+        <textarea
+          id="chatInput"
+          rows="1"
+          placeholder="Message Vignan IIT Assistant..."
+          autocomplete="off"
+        ></textarea>
+        <button type="submit" id="sendBtn" class="send-btn" aria-label="Send">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <path d="M4 12L20 4L13 20L11 13L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+      <p class="disclaimer">
+        Answers are generated from vignaniit.edu.in content and may be incomplete. Verify important details with the college directly.
+      </p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

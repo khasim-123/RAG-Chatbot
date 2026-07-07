@@ -1,0 +1,12 @@
+.env
+backend/.env
+
+venv/
+venv312/
+backend/venv/
+backend/venv312/
+
+__pycache__/
+*.pyc
+
+data/chroma_db/
