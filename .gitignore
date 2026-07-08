@@ -9,4 +9,3 @@ backend/venv312/
 __pycache__/
 *.pyc
 
-data/chroma_db/
